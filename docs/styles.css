@@ -112,7 +112,7 @@ body::before {
 
 .nav {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
 }
 
