@@ -225,6 +225,8 @@ body::before {
     color: var(--text-light);
     font-weight: 500;
     transition: var(--transition);
+    margin: 0;
+    padding: 0;
 }
 
 .nav a:hover {

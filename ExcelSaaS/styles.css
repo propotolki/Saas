@@ -129,31 +129,19 @@ body::before {
 }
 
 .nav a {
-    color: var(--text-light);
     text-decoration: none;
+    color: var(--text-light);
     font-weight: 500;
     transition: var(--transition);
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .nav a:hover {
     color: var(--excel-green);
 }
 
-.nav a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary-gradient);
-    transition: var(--transition);
-}
 
-.nav a:hover::after {
-    width: 100%;
-}
 
 .cta-nav {
     background: var(--primary-gradient);
