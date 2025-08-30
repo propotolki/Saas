@@ -237,7 +237,7 @@ body::before {
 .cta-nav {
     background: var(--primary-gradient);
     color: white !important;
-    padding: 0.5rem 1rem;
+    padding: 0.65rem 1.3rem;
     border-radius: var(--border-radius);
     font-weight: 600;
 }
