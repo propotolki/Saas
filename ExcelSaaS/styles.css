@@ -124,7 +124,7 @@ body::before {
 
 .nav {
     display: flex;
-    gap: 6rem;
+    gap: 12rem;
     align-items: center;
 }
 
@@ -145,7 +145,7 @@ body::before {
 
 .cta-nav {
     background: var(--primary-gradient);
-    padding: 0.65rem 1.3rem;
+    padding: 0.845rem 1.69rem;
     border-radius: var(--border-radius);
     color: var(--text-dark) !important;
     font-weight: 600;
