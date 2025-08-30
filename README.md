@@ -20,7 +20,7 @@
 
 ## 🌐 Сайты
 
-- **[Главная страница](https://yourusername.github.io/your-repo-name/)** - Общая информация и сравнение решений
+- **[Главная страница](https://yourusername.github.io/your-repo-name/docs/)** - Общая информация и сравнение решений
 - **[VKSaaS](https://yourusername.github.io/your-repo-name/VKSaaS/)** - VK Mini Apps решения
 - **[ExcelSaaS](https://yourusername.github.io/your-repo-name/ExcelSaaS/)** - Google Sheets автоматизация
 
@@ -64,7 +64,7 @@
 git clone https://github.com/yourusername/your-repo-name.git
 ```
 
-2. Откройте `index.html` в браузере или разместите на GitHub Pages
+2. Откройте `docs/index.html` в браузере или разместите на GitHub Pages
 
 ## 🌟 Особенности
 
@@ -78,9 +78,11 @@ git clone https://github.com/yourusername/your-repo-name.git
 
 ```
 saas-solutions/
-├── index.html              # 🏠 Главная страница
-├── styles.css              # 🎨 Стили главной страницы
-├── script.js               # ⚡ Скрипты главной страницы
+├── docs/                    # 🏠 Главная страница (корневая)
+│   ├── index.html          # Главная страница
+│   ├── styles.css          # Стили главной страницы
+│   ├── script.js           # Скрипты главной страницы
+│   └── CNAME               # Кастомный домен
 ├── VKSaaS/                 # 📱 VK Mini Apps
 │   ├── index.html
 │   ├── styles.css
