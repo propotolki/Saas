@@ -149,7 +149,6 @@ body::before {
     border-radius: var(--border-radius);
     color: var(--text-dark) !important;
     font-weight: 600;
-    transition: var(--transition);
 }
 
 .cta-nav:hover {
@@ -1124,7 +1123,7 @@ body::before {
 .footer-content {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap: 3rem;
+    gap: 6rem;
     margin-bottom: 2rem;
 }
 
@@ -1135,7 +1134,7 @@ body::before {
 
 .footer-links {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .link-group h4 {
