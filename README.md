@@ -79,6 +79,8 @@ git clone https://github.com/yourusername/your-repo-name.git
 ```
 saas-solutions/
 ├── index.html              # 🏠 Главная страница
+├── styles.css              # 🎨 Стили главной страницы
+├── script.js               # ⚡ Скрипты главной страницы
 ├── VKSaaS/                 # 📱 VK Mini Apps
 │   ├── index.html
 │   ├── styles.css
@@ -91,14 +93,13 @@ saas-solutions/
 │   ├── index.html
 │   ├── styles.css
 │   └── script.js
-├── LandingPage/            # 🎨 Стили и скрипты
-│   ├── styles.css
-│   └── script.js
 ├── README.md               # 📖 Описание проекта
 ├── .gitignore              # 🚫 Исключения для git
 ├── CNAME                   # 🌐 Кастомный домен
 ├── DEPLOYMENT.md           # 🚀 Инструкция по развертыванию
-└── QUICK_START.md          # ⚡ Быстрый старт
+├── QUICK_START.md          # ⚡ Быстрый старт
+├── MEDIA_GUIDE.md          # 📸 Руководство по медиафайлам
+└── GITHUB_UPLOAD.md        # 📋 Инструкция по загрузке
 ```
 
 ## 📄 Лицензия
