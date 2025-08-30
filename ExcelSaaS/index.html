@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExcelSaaS - Скрипты, макросы и готовые решения для Google таблиц</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-table"></i>
+                    <span>ExcelSaaS</span>
+                </div>
+                <nav class="nav">
+                    <a href="#problem">Проблема</a>
+                    <a href="#solution">Решение</a>
+                    <a href="#how-it-works">Как работает</a>
+                    <a href="#pricing">Тарифы</a>
+                    <a href="#about">О компании</a>
+                    <a href="#demo" class="cta-nav">Демо</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="data-stream"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Автоматизируйте рутинные задачи <br>
+                        <span class="highlight">в Google таблицах</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Готовые скрипты, макросы и решения для бизнеса. Экономьте время на рутинных операциях 
+                        и сосредоточьтесь на том, что действительно важно.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#demo" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Попробовать бесплатно
+                        </a>
+                        <div class="guarantee">
+                            <i class="fas fa-shield-alt"></i>
+        
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="spreadsheet-mockup">
+                        <div class="spreadsheet-header">
+                            <div class="spreadsheet-tabs">
+                                <div class="tab active">Отчеты</div>
+                                <div class="tab">Аналитика</div>
+                                <div class="tab">Данные</div>
+                            </div>
+                        </div>
+                        <div class="spreadsheet-content">
+                            <div class="spreadsheet-grid">
+                                <div class="cell header">Дата</div>
+                                <div class="cell header">Продажи</div>
+                                <div class="cell header">Прибыль</div>
+                                <div class="cell header">Статус</div>
+                                <div class="cell">01.01.2025</div>
+                                <div class="cell">150,000 ₽</div>
+                                <div class="cell">45,000 ₽</div>
+                                <div class="cell success">✅ Выполнено</div>
+                                <div class="cell">02.01.2025</div>
+                                <div class="cell">180,000 ₽</div>
+                                <div class="cell">54,000 ₽</div>
+                                <div class="cell success">✅ Выполнено</div>
+                                <div class="cell">03.01.2025</div>
+                                <div class="cell">220,000 ₽</div>
+                                <div class="cell">66,000 ₽</div>
+                                <div class="cell pending">⏳ В процессе</div>
+                            </div>
+                            <div class="automation-indicator">
+                                <i class="fas fa-magic"></i>
+                                <span>Автоматически обновляется</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="bg-gradient"></div>
+            <div class="floating-elements">
+                <div class="floating-card card-1">
+                    <i class="fas fa-chart-line"></i>
+                    <span>+80% эффективность</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-clock"></i>
+                    <span>Экономия 20 часов/нед</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-users"></i>
+                    <span>500+ клиентов</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Что вы получаете</h2>
+                <p>Готовые решения для автоматизации ваших бизнес-процессов</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>Автоматические отчеты</h4>
+                    <p>Скрипты для создания и отправки отчетов по расписанию</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h4>Синхронизация данных</h4>
+                    <p>Автоматическая синхронизация между разными источниками данных</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h4>Аналитика и визуализация</h4>
+                    <p>Готовые дашборды и графики для анализа данных</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                                            <h4>Email и Telegram уведомления</h4>
+                    <p>Автоматические уведомления при важных событиях</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>API интеграции</h4>
+                    <p>Подключение к внешним сервисам и базам данных</p>
+                </div>
+                <div class="feature-card featured">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h4>Кастомизация</h4>
+                    <p>Адаптация под ваши конкретные потребности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem">
+        <div class="container">
+            <div class="section-header">
+                <h2>Хватит тратить время на рутину</h2>
+            </div>
+            <div class="problem-content">
+                <div class="problem-intro">
+                    <p class="problem-question">Вам знакомо это?</p>
+                    <p>Каждый день вы тратите часы на создание одних и тех же отчетов. Копируете данные из одной таблицы в другую. Обновляете графики вручную. Отправляете email-уведомления. И все это можно автоматизировать!</p>
+                </div>
+                <div class="problem-list">
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="problem-text">
+                            <h4>Потеря времени</h4>
+                            <p>Часы каждый день на рутинные операции в таблицах</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="problem-text">
+                            <h4>Ошибки в данных</h4>
+                            <p>Человеческий фактор приводит к неточностям в отчетах</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-calendar-times"></i>
+                        </div>
+                        <div class="problem-text">
+                            <h4>Пропущенные дедлайны</h4>
+                            <p>Не успеваем вовремя отправить важные отчеты</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="problem-text">
+                            <h4>Высокие затраты</h4>
+                            <p>Дорогая разработка индивидуальных решений</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-user-times"></i>
+                        </div>
+                        <div class="problem-text">
+                            <h4>Зависимость от специалистов</h4>
+                            <p>Нужен программист для каждого изменения</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <div class="problem-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="problem-text">
+                            <h4>Упущенные возможности</h4>
+                            <p>Нет времени на анализ данных и принятие решений</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem-summary">
+                    <p>В итоге вы тратите драгоценное время на технические задачи вместо развития бизнеса. <strong>Пора автоматизировать!</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution">
+        <div class="container">
+            <div class="section-header">
+                <h2>Автоматизируйте все рутинные задачи — мы сделаем это за вас</h2>
+                <p>Готовые скрипты и макросы для Google таблиц, которые работают из коробки. Вы получаете мощные инструменты автоматизации, а мы берем на себя всю техническую работу.</p>
+            </div>
+            <div class="solutions-showcase">
+                <div class="solution-demo">
+                    <div class="demo-header">
+                        <h3>Примеры автоматизации</h3>
+                    </div>
+                    <div class="demo-items">
+                        <div class="demo-item">
+                            <div class="demo-icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <div class="demo-content">
+                                <h4>Автоматические отчеты</h4>
+                                <p>Ежедневные, еженедельные и ежемесячные отчеты создаются и отправляются автоматически</p>
+                            </div>
+                        </div>
+                        <div class="demo-item">
+                            <div class="demo-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="demo-content">
+                                <h4>Синхронизация данных</h4>
+                                <p>Данные из CRM, сайта и других источников автоматически попадают в ваши таблицы</p>
+                            </div>
+                        </div>
+                        <div class="demo-item">
+                            <div class="demo-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <div class="demo-content">
+                                <h4>Живые дашборды</h4>
+                                <p>Графики и диаграммы обновляются в реальном времени</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-benefits">
+                    <div class="benefit-item">
+                        <div class="benefit-number">80%</div>
+                        <div class="benefit-text">
+                            <h4>Экономия времени</h4>
+                            <p>Автоматизация рутинных задач освобождает время для важных дел</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">100%</div>
+                        <div class="benefit-text">
+                            <h4>Точность данных</h4>
+                            <p>Исключение человеческого фактора и ошибок в расчетах</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">24/7</div>
+                        <div class="benefit-text">
+                            <h4>Работа без перерывов</h4>
+                            <p>Скрипты работают круглосуточно, даже когда вы спите</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Начните автоматизацию за 3 простых шага</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Выбор решения</h4>
+                        <p>Выбираете готовый скрипт или заказываете индивидуальную разработку</p>
+                    </div>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Настройка</h4>
+                        <p>Мы настраиваем скрипт под ваши данные и требования</p>
+                    </div>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Запуск</h4>
+                        <p>Скрипт начинает работать автоматически в ваших таблицах</p>
+                    </div>
+                </div>
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+                <div class="step result-step">
+                    <div class="step-number">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="step-content">
+                        <h4>Результат</h4>
+                        <p>Экономите время и получаете точные данные</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Выберите план автоматизации</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h4>Старт</h4>
+                        <div class="price">
+                            <span class="monthly">749 ₽<small>/мес</small></span>
+                            <span class="yearly">7 490 ₽<small>/год</small></span>
+                        </div>
+                        <div class="savings">Экономия 1 498 ₽!</div>
+                        <p>Для малого бизнеса</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> 3 базовых скрипта</li>
+                        <li><i class="fas fa-check"></i> Базовые отчеты</li>
+                        <li><i class="fas fa-check"></i> Telegram поддержка</li>
+                        <li><i class="fas fa-check"></i> Обновления</li>
+                    </ul>
+                    <button class="btn btn-outline select-plan-btn" data-plan="start">Выбрать план</button>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <div class="plan-header">
+                        <h4>Бизнес</h4>
+                        <div class="price">
+                            <span class="monthly">1 490 ₽<small>/мес</small></span>
+                            <span class="yearly">14 900 ₽<small>/год</small></span>
+                        </div>
+                        <div class="savings">Экономия 2 980 ₽!</div>
+                        <p>Для растущего бизнеса</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Всё из плана "Старт"</li>
+                        <li><i class="fas fa-check"></i> 7 готовых скриптов</li>
+                        <li><i class="fas fa-check"></i> API интеграции</li>
+                        <li><i class="fas fa-check"></i> Приоритетная поддержка</li>
+                        <li><i class="fas fa-check"></i> Кастомизация</li>
+                    </ul>
+                    <button class="btn btn-primary select-plan-btn" data-plan="business">Выбрать план</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h4>Премиум</h4>
+                        <div class="price">
+                            <span class="monthly">4 990 ₽<small>/мес</small></span>
+                            <span class="yearly">49 900 ₽<small>/год</small></span>
+                        </div>
+                        <div class="savings">Экономия 9 980 ₽!</div>
+                        <p>Для крупных компаний</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Всё из плана "Бизнес"</li>
+                        <li><i class="fas fa-check"></i> Неограниченные скрипты</li>
+                        <li><i class="fas fa-check"></i> Индивидуальная разработка</li>
+                        <li><i class="fas fa-check"></i> Персональный менеджер</li>
+                        <li><i class="fas fa-check"></i> Обучение команды</li>
+                    </ul>
+                    <button class="btn btn-outline select-plan-btn" data-plan="premium">Выбрать план</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Company Section -->
+    <section id="about" class="about-company">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>О компании</h2>
+                        <p>От студенческой инициативы до технологического лидера</p>
+                    </div>
+                    <div class="about-story">
+                        <div class="story-item">
+                            <div class="story-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="story-content">
+                                <h4>Начало пути</h4>
+                                <p>Мы начали как некоммерческая организация, которая помогала обрести первые навыки студентам колледжей и техникумов. Наша миссия была простой — дать молодым людям возможность применить теоретические знания на практике.</p>
+                            </div>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="story-content">
+                                <h4>Рост специалистов</h4>
+                                <p>Теперь эти молодые люди выросли в настоящих специалистов и учат новых. Наша команда — это сообщество профессионалов, которые прошли путь от студента до эксперта.</p>
+                            </div>
+                        </div>
+                        <div class="story-item">
+                            <div class="story-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="story-content">
+                                <h4>Инновационные решения</h4>
+                                <p>Именно поэтому у нас инновационная система предложения, быстрое создание скриптов и неиссякаемый запас решений. Мы знаем, как превратить идею в работающий продукт за рекордные сроки.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Созданных скриптов</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Специалистов в команде</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Года опыта</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Поддержка клиентов</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>Готовы автоматизировать свой бизнес?</h2>
+                    <p>Заполните форму ниже, и наш специалист свяжется с вами в течение 15 минут. Мы бесплатно проанализируем ваши процессы и предложим оптимальное решение для автоматизации.</p>
+                    <div class="guarantee-block">
+                        <div class="guarantee-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="guarantee-text">
+                            <h4>Проверенное решение</h4>
+                            <p>Уже более 150 клиентов за этот год автоматизировали свои процессы с нами. Время на рутинные задачи сократилось в среднем на 80%, а точность данных выросла до 100%. Присоединяйтесь к успешным предпринимателям!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-form">
+                    <form class="form">
+                        <h3>Получить консультацию!</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="business" required>
+                                <option value="">Сфера бизнеса</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="services">Услуги</option>
+                                <option value="manufacturing">Производство</option>
+                                <option value="finance">Финансы</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="plan" id="plan-select" required>
+                                <option value="">Тарифный план</option>
+                                                            <option value="start">Старт - 749₽/мес</option>
+                            <option value="business">Бизнес - 1,490₽/мес</option>
+                            <option value="premium">Премиум - 4,990₽/мес</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Опишите ваши задачи для автоматизации" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-rocket"></i>
+                            Получить бесплатную консультацию!
+                        </button>
+                        <p class="form-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-table"></i>
+                        <span>ExcelSaaS</span>
+                    </div>
+                    <p>Автоматизация Google таблиц для бизнеса</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Продукт</h4>
+                        <a href="#solution">Возможности</a>
+                        <a href="#pricing">Тарифы</a>
+                        <a href="#how-it-works">Как работает</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>О компании</h4>
+                        <a href="#about">Наша история</a>
+                        <a href="#about">Миссия</a>
+                        <a href="#about">Команда</a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>akademiamolodyhlid@ya.ru</p>
+                    <p><a href="https://t.me/AlexchelZzz" target="_blank">@AlexchelZzz</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ExcelSaaS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
