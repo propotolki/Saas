@@ -98,28 +98,6 @@ body::before {
 .logo i {
     font-size: 2rem;
     transform: translateZ(20px);
-}
-
-.brand-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 1rem;
-}
-
-.brand-name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-.brand-subtitle {
-    font-size: 0.7rem;
-    font-weight: 400;
-    color: var(--text-light);
-    opacity: 0.8;
-    font-style: italic;
-}
     filter: drop-shadow(0 0 10px var(--neon-blue));
     animation: logoGlow 3s ease-in-out infinite;
 }
@@ -216,7 +194,7 @@ body::before {
 
 .nav {
     display: flex;
-    gap: 6rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -225,8 +203,6 @@ body::before {
     color: var(--text-light);
     font-weight: 500;
     transition: var(--transition);
-    margin: 0;
-    padding: 0;
 }
 
 .nav a:hover {
@@ -234,17 +210,87 @@ body::before {
     text-shadow: 0 0 10px var(--neon-blue);
 }
 
+/* Enhanced CTA Button */
 .cta-nav {
-    background: var(--primary-gradient);
-    color: white !important;
     padding: 0.845rem 1.69rem;
-    border-radius: var(--border-radius);
+    background: var(--primary-gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
     font-weight: 600;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 119, 255, 0.3);
+}
+
+.cta-nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-nav:hover::before {
+    left: 100%;
 }
 
 .cta-nav:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 8px 25px rgba(0, 119, 255, 0.5);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.cta-nav:active {
+    transform: translateY(0);
+}
+
+/* CTA Button for content */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 119, 255, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 119, 255, 0.5);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.cta-button:active {
+    transform: translateY(0);
 }
 
 /* Buttons */
@@ -1447,24 +1493,29 @@ body::before {
     pointer-events: none;
 }
 
+/* Pricing Grid */
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 3rem;
 }
 
 .pricing-card {
     background: var(--card-bg);
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: 2rem;
+    padding: 2.5rem;
     text-align: center;
-    position: relative;
     transition: var(--transition);
-    backdrop-filter: blur(10px);
+    position: relative;
     overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.pricing-card.featured {
+    border-color: var(--vk-blue);
+    box-shadow: 0 0 30px rgba(0, 119, 255, 0.3);
 }
 
 .pricing-card::before {
@@ -1474,8 +1525,8 @@ body::before {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
-    transition: var(--transition);
+    background: linear-gradient(90deg, transparent, rgba(0, 119, 255, 0.1), transparent);
+    transition: left 0.6s ease;
 }
 
 .pricing-card:hover::before {
@@ -1483,13 +1534,54 @@ body::before {
 }
 
 .pricing-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-10px);
+    border-color: var(--vk-blue);
+    box-shadow: var(--shadow-lg), 0 0 30px rgba(0, 119, 255, 0.3);
 }
 
-.pricing-card.popular {
-    border-color: var(--primary-color);
-    transform: scale(1.05);
+.pricing-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.pricing-card .price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--vk-blue);
+    margin-bottom: 2rem;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 400;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.pricing-card li {
+    color: var(--text-light);
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pricing-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--vk-blue);
+    font-weight: bold;
+}
+
+.pricing-card .cta-button {
+    width: 100%;
 }
 
 .popular-badge {
@@ -1686,25 +1778,66 @@ body::before {
     color: var(--text-dark);
 }
 
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
 
 .form-group input,
-.form-group select {
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    font-family: inherit;
+    color: var(--text-dark);
     font-size: 1rem;
     transition: var(--transition);
+    font-family: inherit;
 }
 
 .form-group input:focus,
-.form-group select:focus {
+.form-group select:focus,
+.form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: var(--vk-blue);
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-light);
+}
+
+.form-group select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+    appearance: none;
+}
+
+.form-group select option {
+    background: var(--darker-bg);
+    color: var(--text-dark);
+    border: none;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .form-note {
