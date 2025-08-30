@@ -13,10 +13,10 @@ RewriteRule ^ExcelSaaS/?$ ExcelSaaS/index.html [L]
 # Обработка главной страницы
 RewriteRule ^docs/?$ docs/index.html [L]
 
-# Обработка CSS и JS файлов
+# Обработка CSS и JS файлов для главной страницы
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.(css|js)$ docs/$1.$2 [L]
+RewriteRule ^(styles|script)\.(css|js)$ docs/$1.$2 [L]
 
 # Обработка изображений
 RewriteCond %{REQUEST_FILENAME} !-f

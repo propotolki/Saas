@@ -8,14 +8,6 @@
         <priority>1.0</priority>
     </url>
     
-    <!-- Главная страница (docs) -->
-    <url>
-        <loc>https://maketry.ru/docs/</loc>
-        <lastmod>2025-01-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    
     <!-- VKSaaS -->
     <url>
         <loc>https://maketry.ru/VKSaaS/</loc>

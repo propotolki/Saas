@@ -2,14 +2,12 @@ User-agent: *
 Allow: /
 
 # Главная страница
+Allow: /
 Allow: /docs/
-Allow: /docs/index.html
 
 # Страницы решений
 Allow: /VKSaaS/
-Allow: /VKSaaS/index.html
 Allow: /ExcelSaaS/
-Allow: /ExcelSaaS/index.html
 
 # Статические файлы
 Allow: /*.css
