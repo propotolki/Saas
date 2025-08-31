@@ -8,46 +8,37 @@ desktop.ini
 *.temp
 *.log
 
-# IDE файлы
+# Файлы редакторов
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# Зависимости (если будут)
+# Зависимости (если будут добавлены)
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+package-lock.json
+yarn.lock
 
 # Сборка
 dist/
 build/
 
-# Локальные конфигурации
+# Переменные окружения
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.production
 
 # Логи
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 
 # Кэш
 .cache/
 .parcel-cache/
 
-# Временные файлы
-*.tmp
-*.temp
-
-# Исключаем только ненужные файлы, но оставляем изображения
-# НЕ исключаем:
-# - *.jpg (изображения продуктов)
-# - *.webp (примеры работ)
-# - HTML, CSS, JS файлы
+# Временные папки
+tmp/
+temp/
