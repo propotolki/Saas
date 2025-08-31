@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест логотипа MakeTry</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 2rem;
+            text-align: center;
+        }
+        .logo-container {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo {
+            width: 64px;
+            height: 64px;
+            margin: 1rem auto;
+            display: block;
+        }
+        .logo-small {
+            width: 32px;
+            height: 32px;
+        }
+        .logo-tiny {
+            width: 16px;
+            height: 16px;
+        }
+        h1 {
+            color: #6366f1;
+            margin-bottom: 1rem;
+        }
+        .size-info {
+            background: rgba(99, 102, 241, 0.1);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+        .download-links {
+            margin-top: 2rem;
+        }
+        .download-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #6366f1, #06b6d4);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .download-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Логотип MakeTry</h1>
+    <p>Тестирование логотипа-ракеты для favicon сайта</p>
+
+    <div class="logo-container">
+        <h2>Логотип в разных размерах</h2>
+        
+        <div class="size-info">
+            <h3>64x64 пикселей (основной размер)</h3>
+            <svg class="logo" viewBox="0 0 32 32">
+                <defs>
+                    <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+                    </linearGradient>
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                        <feMerge> 
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <g filter="url(#glow)">
+                    <path d="M16 4 L20 8 L20 20 L12 20 L12 8 Z" fill="url(#rocketGradient)" stroke="#ffffff" stroke-width="0.5"/>
+                    <path d="M16 4 L18 6 L16 8 L14 6 Z" fill="#f59e0b" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M12 12 L8 16 L12 18 L12 12 Z" fill="#6366f1" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M20 12 L24 16 L20 18 L20 12 Z" fill="#6366f1" stroke="#ffffff" stroke-width="0.3"/>
+                    <circle cx="16" cy="12" r="2" fill="#06b6d4" stroke="#ffffff" stroke-width="0.3"/>
+                    <rect x="14" y="20" width="4" height="2" fill="#f59e0b" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M14 22 L13 26 L15 28 L16 26 L17 28 L19 26 L18 22 Z" fill="#f59e0b" opacity="0.8"/>
+                    <circle cx="15" cy="24" r="1" fill="#94a3b8" opacity="0.6"/>
+                    <circle cx="17" cy="25" r="0.8" fill="#94a3b8" opacity="0.4"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="size-info">
+            <h3>32x32 пикселей (средний размер)</h3>
+            <svg class="logo logo-small" viewBox="0 0 32 32">
+                <defs>
+                    <linearGradient id="rocketGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <g>
+                    <path d="M16 4 L20 8 L20 20 L12 20 L12 8 Z" fill="url(#rocketGradient2)" stroke="#ffffff" stroke-width="0.5"/>
+                    <path d="M16 4 L18 6 L16 8 L14 6 Z" fill="#f59e0b" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M12 12 L8 16 L12 18 L12 12 Z" fill="#6366f1" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M20 12 L24 16 L20 18 L20 12 Z" fill="#6366f1" stroke="#ffffff" stroke-width="0.3"/>
+                    <circle cx="16" cy="12" r="2" fill="#06b6d4" stroke="#ffffff" stroke-width="0.3"/>
+                    <rect x="14" y="20" width="4" height="2" fill="#f59e0b" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M14 22 L13 26 L15 28 L16 26 L17 28 L19 26 L18 22 Z" fill="#f59e0b" opacity="0.8"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="size-info">
+            <h3>16x16 пикселей (favicon размер)</h3>
+            <svg class="logo logo-tiny" viewBox="0 0 32 32">
+                <defs>
+                    <linearGradient id="rocketGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <g>
+                    <path d="M16 4 L20 8 L20 20 L12 20 L12 8 Z" fill="url(#rocketGradient3)" stroke="#ffffff" stroke-width="0.5"/>
+                    <path d="M16 4 L18 6 L16 8 L14 6 Z" fill="#f59e0b" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M12 12 L8 16 L12 18 L12 12 Z" fill="#6366f1" stroke="#ffffff" stroke-width="0.3"/>
+                    <path d="M20 12 L24 16 L20 18 L20 12 Z" fill="#6366f1" stroke="#ffffff" stroke-width="0.3"/>
+                    <circle cx="16" cy="12" r="2" fill="#06b6d4" stroke="#ffffff" stroke-width="0.3"/>
+                    <rect x="14" y="20" width="4" height="2" fill="#f59e0b" stroke="#ffffff" stroke-width="0.3"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="download-links">
+        <h2>📥 Скачать логотип</h2>
+        <a href="logo.svg" download>SVG версия</a>
+        <a href="logo-16x16.png" download>PNG 16x16</a>
+        <a href="favicon.ico" download>ICO файл</a>
+    </div>
+
+    <div class="logo-container">
+        <h2>🔧 Инструкция по установке</h2>
+        <p>Добавьте следующие строки в &lt;head&gt; вашего HTML:</p>
+        <pre style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 0.5rem; text-align: left; overflow-x: auto;">
+&lt;link rel="icon" type="image/svg+xml" href="logo.svg"&gt;
+&lt;link rel="icon" type="image/x-icon" href="favicon.ico"&gt;
+&lt;link rel="apple-touch-icon" href="logo-180x180.png"&gt;</pre>
+    </div>
+
+    <div class="logo-container">
+        <h2>📱 Поддерживаемые форматы</h2>
+        <ul style="text-align: left; display: inline-block;">
+            <li><strong>SVG</strong> - векторный формат, масштабируется без потери качества</li>
+            <li><strong>ICO</strong> - стандартный формат для Windows favicon</li>
+            <li><strong>PNG</strong> - растровый формат для различных размеров</li>
+            <li><strong>Apple Touch Icon</strong> - для iOS устройств</li>
+        </ul>
+    </div>
+</body>
+</html>
